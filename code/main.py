@@ -8,6 +8,7 @@ def make_analysation(birth_day):
     return life_path,lucky_color,generation
 
 if __name__ == "__main__":
-    date = "09/07/2005"
+    
+    date = input("Enter date of birth")
     path = make_analysation(date)
     print(path)
