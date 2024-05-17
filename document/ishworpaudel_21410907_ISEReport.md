@@ -9,3 +9,6 @@
 # INTRODUCTION 
 
 This project is to reflect the software enginnering pattern that follow good modularity design pattern, version control and testing of code. It consist of three module i.e Numerical, Generation and Main module that are design to calculate life path number, lucky colour and also to find the generation based on the birth
+
+# Module Description 
+
