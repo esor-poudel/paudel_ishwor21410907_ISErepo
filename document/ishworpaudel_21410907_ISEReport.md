@@ -34,9 +34,21 @@ Module generally refers to the component of the program for easy replacement. To
 
     **Module Name** : Main.py
 
-    **description**: This module act as the entry point of the software that integrate all the function written in the above module. It interact with the user to ask user to input birthday and display the calculated result to the user.
+    **Description**: This module act as the entry point of the software that integrate all the function written in the above module. It interact with the user to ask user to input birthday and display the calculated result to the user.
 
     **Design Decision**: the decision to make this module is simple, this module helps to integerate all the function so that in the future it helps developer to integrate module or the function written in other module. It consit of **make_analysation** and **main** functions that interact each other for asking input and displaying the result to the user. 
+
+# Modularity:
+
+## How to Run the Production Code
+To run the production code follow the step mentioned below
+
+1. Make sure the python is installed in your local machine ([https://docs.python.org/3/using/windows.html]) **installation Guide for python**
+2. Clone the Repository 
+3. git clone <repository_url>
+3. cd to cloned file 
+4. Goto Main.py and type command **python -m main.py**
+5. If everything goes right then you will be prompt terminal that ask for birthday 
 
 
 
