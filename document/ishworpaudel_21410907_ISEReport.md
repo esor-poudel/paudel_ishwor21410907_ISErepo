@@ -50,9 +50,41 @@ To run the production code follow the step mentioned below
 4. Goto Main.py and type command **python -m main.py**
 5. If everything goes right then you will be prompt terminal that ask for birthday 
 
+Modularity simply means "**the quality of consisting of seperate part that, when combined, form a complete whole**". In software engineering this concept can be applied when implementing the actual coding of the project. Instead of writing whole logic in one file, it can be divided into multiple functions and files for ease of reading and maintainance purpose.So, this project consist two directory **code** and **document**. In code directory three main module named **generation.py**, **numerical.py** and **main.py** can be found. the sole purpose of this module is to implement the coding section of the project and implement the logic of the program. In other hand, **document** directory consist of **ishworpaudel_21410907_ISEREPORT.md** file that handles the documentation section of the program. This project tries to implement the key concept of the modularity that are described below briefly:
+
+1. **Single Responsibilty principle:**
+Each module performs a single and a well defined task. for example numerical module is only concerned for finding the life path number of the user whereas generation module is concerned for finding the generation of the user. This module are not concerned for validating the user input, prompting display for asking user birthday or providing the result. Main module is concerned with this part and main module is not concerned for numerical part of the program.So, the program follows the single responsibilty principle wisely. 
+
+2. **High Cohesion**:
+Each module contains multiple functions and are closely related and work together to acheive the module's goal. for example numerical module contains three functions and at each step this functions work together to break down the birthday and calculating the sum. similarly, at each step they communicate to check if the total is within the mater number [11,22,33] or not. 
+
+3. **Low Coupling:**
+Modules interact through well-defined interfaces and they are independent. This allows the freedom to changes in one module without affecting others.for example the change in generation module will not affect the another module that contains the the logic for calulating the life path number. 
+
+4. **Encapsulation**:
+In this project only the **private functions and variable** are used. furthermore, module interface are simple and easy to understand. Implementation details are hidden with modules exposing only the necessary interface for the interaction. 
+
+5. **Abstraction:**
+This module hides the complexity of the logic to the user and only provide the simple interface to the user. for example, main module contains one simple function make_analysis that analyze the user life path number based on their birthday but the user is hidden what inside the calculation of the number. 
+
+6. **Flexibility and Extensibility:**
+This module are designed to easily expand on the future.for example adding new rule on calculation of life path or finding the generation of the user requires minimal changes in the module. 
+
+## Review Checklist 
+
+1. **Implementation**:
+- [] Does the code modification achieve its intended purpose?
+- [] Is there a way to make this solution more straightforward?
+- [] Does this change introduce any unnecessary compile-time or run-time dependencies?
+- [] Is there a framework, API, library, or service in use that is inappropriate for this situation?
+- [] Would incorporating an additional framework, API, library, or service enhance the solution?
+- [] Is the code written at an appropriate level of abstraction?
+- [] Is the code sufficiently modular?
+- [] Can the solution be improved in terms of maintainability, readability, performance, or security?
+- [] Does similar functionality already exist within the codebase, and if so, why isn’t it being reused?
+- [] Are there any best practices, design patterns, or language-specific conventions that could significantly enhance this code?
 
 
-    
 
 
 
