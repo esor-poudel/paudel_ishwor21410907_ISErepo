@@ -215,7 +215,9 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 11. First year of Generation Alpha: 2013
 12. Last year of Generation Alpha: 2025
 
-| Column 1      | Column 2      |
-| ------------- | ------------- |
-| Cell 1, Row 1 | Cell 2, Row 1 |
-| Cell 1, Row 2 | Cell 2, Row 2 |
+**Test case design Table is Given below**
+
+| Category      | Test data     | Expected Result |
+| ------------- | ------------- |---------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 |                 |
+| Cell 1, Row 2 | Cell 2, Row 2 |                 |  
