@@ -217,7 +217,118 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 
 **Test case design Table is Given below**
 
-| Category      | Test data     | Expected Result |
-| ------------- | ------------- |---------------- |
-| Cell 1, Row 1 | Cell 2, Row 1 |                 |
-| Cell 1, Row 2 | Cell 2, Row 2 |                 |  
+### Test Cases for Birthday Validation and Life Path Calculation
+
+#### Module: `validate_user_birthday`
+
+**Category: Valid Date Format**
+
+| Category      | Test Data    | Expected Result |
+|---------------|--------------|-----------------|
+| Valid Format  | "12/25/1990" | True            |
+| Valid Format  | "01/01/2000" | True            |
+
+**Category: Invalid Date Format**
+
+| Category       | Test Data    | Expected Result |
+|----------------|--------------|-----------------|
+| Missing Slashes| "12251990"   | False           |
+| Wrong Order    | "1990/12/25" | False           |
+| Non-Numeric    | "ab/cd/efgh" | False           |
+
+#### Module: `calculate_life_path`
+
+**Category: Birthdays with No Master Numbers**
+
+| Category          | Test Data    | Expected Result |
+|-------------------|--------------|-----------------|
+| No Master Numbers | "02/03/1990" | 6               |
+| No Master Numbers | "01/01/2000" | 4               |
+
+**Category: Birthdays with Master Numbers**
+
+| Category                       | Test Data    | Expected Result |
+|--------------------------------|--------------|-----------------|
+| Master Number in Day           | "11/15/1980" | 8               |
+| Master Number in Month         | "12/11/2000" | 7               |
+| Master Number in Year          | "03/03/1922" | 1               |
+| Master Numbers in Day and Month| "11/11/2020" | 6               |
+
+**Category: Boundary Dates**
+
+| Category           | Test Data    | Expected Result |
+|--------------------|--------------|-----------------|
+| First Day of the Year | "01/01/2000" | 4           |
+| Last Day of the Year  | "12/31/2000" | 1           |
+
+#### Module: `check_if_mater_number`
+
+**Category: Non-Master Numbers**
+
+| Category     | Test Data | Expected Result |
+|--------------|-----------|-----------------|
+| Non-Master   | 4         | False           |
+| Non-Master   | 10        | False           |
+| Non-Master   | 12        | False           |
+
+**Category: Master Numbers**
+
+| Category     | Test Data | Expected Result |
+|--------------|-----------|-----------------|
+| Master       | 11        | True            |
+| Master       | 22        | True            |
+| Master       | 33        | True            |
+
+#### Module: `find_lucky_color`
+
+**Category: Valid Life Path Numbers**
+
+| Category         | Test Data | Expected Result |
+|------------------|-----------|-----------------|
+| Valid Life Path  | 3         | "Yellow"        |
+| Valid Life Path  | 11        | "Silver"        |
+
+**Category: Invalid Life Path Numbers**
+
+| Category           | Test Data | Expected Result |
+|--------------------|-----------|-----------------|
+| Invalid Life Path  | 0         | "Unknown"       |
+| Invalid Life Path  | 100       | "Unknown"       |
+
+#### Module: `find_user_generation`
+
+**Category: Valid Generations**
+
+| Category           | Test Data | Expected Result      |
+|--------------------|-----------|----------------------|
+| Silent Generation  | 1935      | "Silent Generation"  |
+| Baby Boomer        | 1955      | "Baby Boomer"        |
+| Generation X       | 1975      | "Generation X"       |
+| Millennial         | 1990      | "Millennial"         |
+| Generation Z       | 2005      | "Generation Z"       |
+| Generation Alpha   | 2020      | "Generation Alpha"   |
+
+**Category: Invalid Generations**
+
+| Category            | Test Data | Expected Result     |
+|---------------------|-----------|---------------------|
+| Year Outside Range  | 1900      | "Unknown Generation"|
+
+**Category: Boundary Years**
+
+| Boundary                       | Test Data | Expected Result      |
+|--------------------------------|-----------|----------------------|
+| Between [1901-1945]            | 1928     | "Silent Generation"  |
+| Between [1946-1964]            | 1946     | "Baby Boomer"        |
+| Between [1965-1979]            | 1975     | "Generation X"       |
+| Between [1980-1994]            | 1985     | "Millennial"         |
+| Between [1995-2009]            | 2005     | "Generation Z"       |
+| Between [2010-2024]            | 2021     | "Generation Alpha"   |
+
+#### Module: `single_digit_number`
+
+| Category           | Test Data | Expected Result      |
+|--------------------|-----------|----------------------|
+| 0 > sum > 9        | 7         | return 7             |
+| sum > 9            | 23        | return 2+3 = 5       |
+| sum = 11,22,33     | 22        | return 22            |
