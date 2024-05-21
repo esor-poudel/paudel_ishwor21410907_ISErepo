@@ -14,6 +14,7 @@ def validate_user_birthday(birthday):
             birthday_parts = birthday.split(seperator)
             break
     else:
+        print("Date format should be seperated by /. Thank you")
         return False
     
     if len(birthday_parts) != 3:

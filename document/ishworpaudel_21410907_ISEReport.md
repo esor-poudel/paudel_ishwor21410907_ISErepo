@@ -149,7 +149,6 @@ Equivalence Partitioning is the technique of dividing the input data into partit
 Boundary value analysis involves creating test cases that focus on the boundaries of the input partitions. For this test design technique generation module will be used which is also described below.
 
 ## Module : "validate_user_birthday"
-
 **Equivalence Partitioning**
 
 1. Valid date in correct format: "12/25/1990"
@@ -158,4 +157,65 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 4. Non-numeric input: "ab/cd/efgh"
 5. Valid date with single digits: "1/1/2000"
 
+**Boundary Value Analysis:**
 
+1. Date with minimal valid length: "01/01/1900"
+2. Date with maximal valid length: "12/31/2099"
+3. Date less than year 1901 : "11/04/1800"
+4. Date more than year 2024 : "08/08/2029"
+
+## Module : "calculate_life_path"
+**Equivalence Partitioning**
+
+1. Birthday with no master numbers: "02/03/1987" (Life Path Number: 3)
+2. Birthday with master number in day: "11/15/1980" (Life Path Number: 8)
+3. Birthday with master number in month: "12/11/2000" (Life Path Number: 7)
+4. Birthday with master number in year: "03/03/2009" (Life Path Number: 8)
+5. Birthday with master numbers in day and month: "11/11/2020" (Life Path Number: 8)
+
+## Module: "check_if_mater_number"
+**Equivalence Partitioning:**
+
+1. Non-master number: 4 (returns False)
+2. Master number: 11 (return True)
+3. Borderline non-master number: 10 (return False)
+4. Borderline non-master number: 12 (return False)
+
+## Module: "find_lucky_color"
+**Equivalence Partitioning:**
+
+1. Valid life path number: 3 (Yellow)
+2. Valid life path number: 8 (Magenta)
+3. Invalid life path number: 0 (Unknown)
+4. Invalid life path number: 100 (Unknown)
+
+## Module: "find_user_generation"
+**Equivalence Partitioning:**
+
+1. Year within Silent Generation: 1935
+2. Year within Baby Boomer: 1955
+3. Year within Generation X: 1975
+4. Year within Millennial: 1990
+5. Year within Generation Z: 2005
+6. Year within Generation Alpha: 2020
+7. Year outside defined generations: 1900
+
+**Boundary Value Analysis:**
+
+1. First year of Silent Generation: 1928
+2. Last year of Silent Generation: 1945
+3. First year of Baby Boomer: 1946
+4. Last year of Baby Boomer: 1964
+5. First year of Generation X: 1965
+6. Last year of Generation X: 1980
+7. First year of Millennial: 1981
+8. Last year of Millennial: 1996
+9. First year of Generation Z: 1997
+10. Last year of Generation Z: 2012
+11. First year of Generation Alpha: 2013
+12. Last year of Generation Alpha: 2025
+
+| Column 1      | Column 2      |
+| ------------- | ------------- |
+| Cell 1, Row 1 | Cell 2, Row 1 |
+| Cell 1, Row 2 | Cell 2, Row 2 |
