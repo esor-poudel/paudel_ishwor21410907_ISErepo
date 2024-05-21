@@ -142,4 +142,20 @@ This module are designed to easily expand on the future.for example adding new r
 
 ## Test Design (Black Box Testing) 
 
+### Equivalence Partitioning
+Equivalence Partitioning is the technique of dividing the input data into partitions of equivalent data from which test cases can be derived. For this program, for each module test design based on equivalence partitioning are done which are described below.
+
+### Boundary Value Analysis 
+Boundary value analysis involves creating test cases that focus on the boundaries of the input partitions. For this test design technique generation module will be used which is also described below.
+
+## Module : "validate_user_birthday"
+
+**Equivalence Partitioning**
+
+1. Valid date in correct format: "12/25/1990"
+2. Invalid format (missing slashes): "12251990"
+3. Invalid format (wrong order): "1990/12/25"
+4. Non-numeric input: "ab/cd/efgh"
+5. Valid date with single digits: "1/1/2000"
+
 
