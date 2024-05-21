@@ -339,9 +339,8 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 **Module: `Validate_user_birthday`**
 
 
-| Path               | Test Data | Expected Result      |
-|--------------------|-----------|----------------------|
-| Enters in for and  |           |                      |
-    if statement     | 7         | return 7             |
-| sum > 9            | 23        | return 2+3 = 5       |
-| sum = 11,22,33     | 22        | return 22            |
+| Path                                | Test Data | Expected Result      |
+|-------------------------------------|-----------|----------------------|
+| Enters in for and <br> if statement | 7         | return 7             |
+| sum > 9                             | 23        | return 2+3 = 5       |
+| sum = 11,22,33                      | 22        | return 22            |
