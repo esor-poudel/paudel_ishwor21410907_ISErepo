@@ -339,8 +339,38 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 **Module: `Validate_user_birthday`**
 
 
-| Path                                | Test Data | Expected Result      |
-|-------------------------------------|-----------|----------------------|
-| Enters in for and <br> if statement | 7         | return 7             |
-| sum > 9                             | 23        | return 2+3 = 5       |
-| sum = 11,22,33                      | 22        | return 22            |
+| Path                                             | Test Data       | Expected Result      |
+|--------------------------------------------------|-----------------|----------------------|
+| Enters in for and  if statement                  | 20/20/2020      | return True          |
+| Enters in else part                              | 20202020        | return False         |
+| Enter in another IF for checking length          | 20/20           | return False         |
+| Enter in IF statement for checking digit         | ee/ff/abcd      | return False         |
+| Enter in IF statement for validating year        | 20/10/1800      | return False         |
+
+
+**Module: `calculate_life_path`**
+
+
+| Path                                             | Test Data                       | Expected Result                            |
+|--------------------------------------------------|---------------------------------|--------------------------------------------|
+| map the user input to three variables            | day=20 month=05 year =1990      | goto function single_digit_number          |
+| check for master number                          | day=11 month=05 year =1990      | return True                                |
+| check the single digit number                    | day=12                          | return False and give sum of 1+2 =         |
+
+
+**Module: `find_lucky_color`**
+
+
+| Path                                             | Test Data       | Expected Result      |
+|--------------------------------------------------|-----------------|----------------------|
+| map the color with corresponding key value pair  | 1:Red           | return Red           |
+| Get the life path number                         | 3               | return Yellow        |
+
+
+**Module: `find_user_generation`**
+
+
+| Path                                             | Test Data                    | Expected Result                            |
+|--------------------------------------------------|------------------------------|--------------------------------------------|
+| Enter into for loop                              | year = 1800                  | return Unknown                             |
+| Enter into if statement                          | year= 1995                   | return Generation Z                        |
