@@ -140,7 +140,9 @@ This module are designed to easily expand on the future.for example adding new r
 ## Dead Code:
 - Is there any commented-out code?
 
-## Test Design (Black Box Testing) 
+## Test Design
+
+1. ## Black Box Testing
 
 ### Equivalence Partitioning
 Equivalence Partitioning is the technique of dividing the input data into partitions of equivalent data from which test cases can be derived. For this program, for each module test design based on equivalence partitioning are done which are described below.
@@ -215,9 +217,7 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 11. First year of Generation Alpha: 2013
 12. Last year of Generation Alpha: 2025
 
-**Test case design Table is Given below**
-
-### Test Cases for Birthday Validation and Life Path Calculation
+## Test case design Table is Given below**
 
 #### Module: `validate_user_birthday`
 
@@ -330,5 +330,18 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 | Category           | Test Data | Expected Result      |
 |--------------------|-----------|----------------------|
 | 0 > sum > 9        | 7         | return 7             |
+| sum > 9            | 23        | return 2+3 = 5       |
+| sum = 11,22,33     | 22        | return 22            |
+
+
+2. ## White Box Testing 
+
+**Module: `Validate_user_birthday`**
+
+
+| Path               | Test Data | Expected Result      |
+|--------------------|-----------|----------------------|
+| Enters in for and  |           |                      |
+    if statement     | 7         | return 7             |
 | sum > 9            | 23        | return 2+3 = 5       |
 | sum = 11,22,33     | 22        | return 22            |
