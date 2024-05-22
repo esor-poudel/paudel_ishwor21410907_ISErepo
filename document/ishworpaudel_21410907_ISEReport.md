@@ -391,14 +391,14 @@ The above screenshot shows that all the module like `calculate_life_path` , `fin
 
 
 # Traceability Matrix
-|                          | Design of Test Cases                                           | Test code imp  execution|
-|--------------------------|---------|----------|------|-------------|----------------------|------|------|-----------|
+
 | Module name              | BB (EP) | BB (BVA) | WB   | Data type/s | Form of Input/Output | EP   | BVA  | White-Box |
 |--------------------------|---------|----------|------|-------------|----------------------|------|------|-----------|
-| validate_birthday_format | done    | done     | done | str         | str/bool             | done | done | done      |
+| validate_user_birthday   | done    | done     | done | str         | str/bool             | done | done | done      |
 | calculate_life_path      | done    | done     | done | str         | str/int              | done | done | done      |
-| is_master_number         | done    | done     | done | int         | int/bool             | done | done | done      |
-| lucky_color              | done    | done     | done | int         | int/str              | done | done | done      |
-| determine_generation     | done    | done     | done | int         | int/str              | done | done | done      |
+| check_if_mater_number    | done    | done     | done | int         | int/bool             | done | done | done      |
+| find_lucky_color         | done    | done     | done | int         | int/str              | done | done | done      |
+| check_user_generation    | done    | done     | done | int         | int/str              | done | done | done      |
+| make_analysation         | notdone | not done | done | int         | int/str              | done | done | done      |
 
 
