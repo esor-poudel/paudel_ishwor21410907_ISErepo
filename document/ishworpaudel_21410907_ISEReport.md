@@ -380,4 +380,13 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 
 Testing the code plays important role to check if all the function works as expected as the user want before the code is sent for the live. So for this project a test file is created to check all the function work as expected or not. To run the test file simply go to the `test.py` file and run the code (**python test.py**)
 
+To test all the module python unittest library helps a lot. Unit test for each module can be done by making a class and validating all form of input.
+
+<img src="assets/testfunction.png">
+
+
+The above screenshot shows that all the module like `calculate_life_path` , `find_lucky_color1`, `find_user_generation` and so on are tested and the result of the test is given below:
+
+<img src="assets/testoutput.png">
+
 
