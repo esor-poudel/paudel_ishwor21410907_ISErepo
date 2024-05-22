@@ -392,7 +392,7 @@ The above screenshot shows that all the module like `calculate_life_path` , `fin
 
 # Traceability Matrix
 |                          | Design of Test Cases                                           | Test code imp  execution|
-|--------------------------|----------------------------------------------------------------|-------------------------|
+|--------------------------|---------|----------|------|-------------|----------------------|------|------|-----------|
 | Module name              | BB (EP) | BB (BVA) | WB   | Data type/s | Form of Input/Output | EP   | BVA  | White-Box |
 |--------------------------|---------|----------|------|-------------|----------------------|------|------|-----------|
 | validate_birthday_format | done    | done     | done | str         | str/bool             | done | done | done      |
