@@ -70,7 +70,7 @@ This module hides the complexity of the logic to the user and only provide the s
 6. **Flexibility and Extensibility:**
 This module are designed to easily expand on the future.for example adding new rule on calculation of life path or finding the generation of the user requires minimal changes in the module. 
 
-## Review Checklist 
+# Review Checklist 
 
 ## Implementation
 ### Functionality:
@@ -140,7 +140,7 @@ This module are designed to easily expand on the future.for example adding new r
 ## Dead Code:
 - Is there any commented-out code?
 
-## Test Design
+# Test Design
 
 1. ## Black Box Testing
 
@@ -374,3 +374,10 @@ Boundary value analysis involves creating test cases that focus on the boundarie
 |--------------------------------------------------|------------------------------|--------------------------------------------|
 | Enter into for loop                              | year = 1800                  | return Unknown                             |
 | Enter into if statement                          | year= 1995                   | return Generation Z                        |
+
+
+# Test Implementation and Test Execution
+
+Testing the code plays important role to check if all the function works as expected as the user want before the code is sent for the live. So for this project a test file is created to check all the function work as expected or not. To run the test file simply go to the `test.py` file and run the code (**python test.py**)
+
+
